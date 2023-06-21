@@ -11,7 +11,7 @@ class Anime:
         all_info = {
             'name': self.NAME,
             'type': self.TYPE,
-            'episode': self.episode,
+            'episode': self.EPISODE,
             'status': self.STATUS,
             'poster': self.POSTER,
             'link': self.LINK
