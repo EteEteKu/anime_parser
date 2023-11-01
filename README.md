@@ -22,9 +22,6 @@
 - Получить аниме с помощью поиска
 - Получить случайное аниме с сайта
 
-## Использование
-
-Вот примеры кода, которые показывают функциональность этого парсера:
 
 ## Пример использования
 
@@ -39,4 +36,14 @@ if search_results:
         print(f"Ссылка: {result['link']}")
 else:
     print("Аниме не найдено.")
+```
+
+```python
+anime_parser = AnimeParser()
+random_anime = anime_parser.get_random_anime()
+if random_anime:
+    print(f"Название: {random_anime[0]}")
+    print(f"Ссылка: {random_anime[1]}")
+else:
+    print("Случайное аниме не найдено.")
 ```
