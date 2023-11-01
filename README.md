@@ -38,6 +38,7 @@ else:
     print("Аниме не найдено.")
 ```
 
+Пример случайного аниме
 ```python
 anime_parser = AnimeParser()
 random_anime = anime_parser.get_random_anime()
