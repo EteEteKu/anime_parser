@@ -49,9 +49,4 @@ else:
     print("Случайное аниме не найдено.")
 ```
 
-## Установка
-```
-git clone https://github.com/EteEteKu/anime_parser.git
-cd anime_parser
-pip install -r requirements.txt
-```
+
