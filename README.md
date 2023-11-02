@@ -28,6 +28,7 @@
 Пример использования парсера для поиска аниме по названию:
 
 ```python
+from AnimeParser import *
 anime_parser = AnimeParser()
 search_results = anime_parser.search_anime("ванпачмен")
 if search_results:
@@ -38,6 +39,7 @@ else:
     print("Аниме не найдено.")
 ```
 ```python
+from AnimeParser import *
 anime = AnimeParser()
 anime_search = anime.get_anime("реинкарнация безработного")[0]
 
@@ -52,6 +54,7 @@ print(anime_search.get_all()) #all
 ```
 Пример случайного аниме
 ```python
+from AnimeParser import *
 anime_parser = AnimeParser()
 random_anime = anime_parser.get_random_anime()
 if random_anime:
