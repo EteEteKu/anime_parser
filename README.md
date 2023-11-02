@@ -29,7 +29,7 @@
 
 ```python
 anime_parser = AnimeParser()
-search_results = anime_parser.search_anime("название_аниме")
+search_results = anime_parser.search_anime("ванпачмен")
 if search_results:
     for result in search_results:
         print(f"Название: {result['name']}")
@@ -37,7 +37,19 @@ if search_results:
 else:
     print("Аниме не найдено.")
 ```
+```python
+anime = AnimeParser()
+anime_search = anime.get_anime("реинкарнация безработного")[0]
 
+print(anime_search.NAME) # Реинкарнация безработного: История о приключениях в другом мире
+print(anime_search.EPISODE) # 11
+print(anime_search.TYPE) # тв сериал
+print(anime_search.STATUS) # вышел
+print(anime_search.POSTER) # link poster
+print(anime_search.LINK) # link animego
+
+print(anime_search.get_all()) #all
+```
 Пример случайного аниме
 ```python
 anime_parser = AnimeParser()
